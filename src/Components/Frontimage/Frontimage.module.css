@@ -1,0 +1,36 @@
+.Frontimage{
+    height: 20.7%;
+    width: 80%;
+    margin-top: 61px;
+    margin-left: 12%;
+    background-color: #290e0e;
+    box-sizing: border-box;
+    box-shadow: 0px 8px 5px 4px rgb(199, 196, 196);
+    border-radius: 2px;
+}
+.Frontimage img {
+    height: 100%;
+    width: 70%;
+    z-index: 40;
+}
+.Frontimage p{
+    color: hotpink;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 200px;
+    position: relative;
+    margin-top: -300px;
+}
+.Frontimage h1{
+    color: rgb(124, 235, 124);
+    position: relative;
+    margin-top: -230px;
+}
+@media(max-width: 750px){
+    .Frontimage{
+        width: 650px;
+        margin-left: 0%;
+    }
+    .Frontimage img{
+        width: 100%;
+    }
+}
