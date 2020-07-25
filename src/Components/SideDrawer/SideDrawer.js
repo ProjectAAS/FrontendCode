@@ -13,7 +13,10 @@ const SideDrawer =(props) =>{
             <Backdrop show={props.show} modalclosed={props.closed}/>
             <div className={Sidedrawerstate.join(' ')} onClick={props.closed}>
                 <ul>
-                <Navigationitem isAuth = {props.IsAuth}/>
+                <Navigationitem 
+                isAuth = {props.IsAuth}
+                status = {props.status}
+                Info = {props.Info}/>
                 </ul>
         </div>
         </div>

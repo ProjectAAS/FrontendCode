@@ -8,10 +8,11 @@ const NavigationItem =(props) =>{
     <div className={classes.NavigationItem}>
       <img src ={Logo} alt='Logo' />
       <NavigationItems link='/'>HOME</NavigationItems>
+      {(props.isAuth && (props.status || props.Info)) 
+      ? <NavigationItems link='/personalinfo'>PERSONAL INFO</NavigationItems> : null}
       {!props.isAuth
        ?<NavigationItems link='/register'>REGISTER</NavigationItems>
        : <NavigationItems link='/logout'>LOGOUT</NavigationItems>}
-      <NavigationItems link='/personalinfo'>PERSONAL INFO</NavigationItems>
     </div>
   )
 }

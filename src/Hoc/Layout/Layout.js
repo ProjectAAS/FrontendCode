@@ -19,11 +19,15 @@ class Layout extends Component{
         <SideDrawer 
         show = {this.state.show} 
         closed={this.ChangeHandler}
-        IsAuth = {this.props.IsAuthenticated}/>
+        IsAuth = {this.props.IsAuthenticated}
+        status = {this.props.status}
+          Info = {this.props.Info}/>
           <Tool 
           show={this.state.show} 
           changed={this.ChangeHandler} 
-          IsAuth = {this.props.IsAuthenticated}/>
+          IsAuth = {this.props.IsAuthenticated}
+          status = {this.props.status}
+          Info = {this.props.Info}/>
           <main>
         {this.props.children}
     </main>
@@ -33,7 +37,9 @@ class Layout extends Component{
 }
 const mapStateToProps = (state) =>{
   return{
-     IsAuthenticated: state.TokenID !== null
+     IsAuthenticated: state.TokenID !== null,
+     status: state.status,
+     Info: state.Info
   }
 }
 export default connect(mapStateToProps)(Layout);

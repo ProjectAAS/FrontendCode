@@ -12,7 +12,12 @@ const Tool =(props) =>{
   return(
     <div className={classes.Toolbar}>
         <Drawer show={props.show} change={props.changed}/>
-     <nav className={classes.Desktop}><NavigationItem isAuth = {props.IsAuth}/></nav>
+     <nav className={classes.Desktop}>
+       <NavigationItem 
+       isAuth = {props.IsAuth}
+       status = {props.status}
+       Info = {props.Info}/>
+       </nav>
     </div>
 )
   }
