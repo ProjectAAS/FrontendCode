@@ -16,9 +16,10 @@
 }
 .body p{
     position: relative;
+    color: rgb(68, 67, 67);
    margin-left: 6%;
    margin-right: 20px;
-   padding-top: 20px;
+   padding-top: 0px;
 }
 @media(max-width: 640px){
     .body{
