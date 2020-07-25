@@ -27,10 +27,15 @@
 }
 @media(max-width: 750px){
     .Frontimage{
-        width: 650px;
+        width: 100%;
         margin-left: 0%;
     }
     .Frontimage img{
         width: 100%;
+    }
+}
+@media(max-width: 428px){
+    .Frontimage{
+        width: 425px;
     }
 }
