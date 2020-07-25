@@ -41,7 +41,8 @@ const loGout =(state,action) =>{
     TokenID: null,
     RegistrationForm: null,
     Info: null,
-    status: null
+    status: null,
+    error: null
  }
 }
 const infoSuccess = (state,action) =>{

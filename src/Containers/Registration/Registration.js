@@ -11,13 +11,13 @@ import Backdrop from '../../Components/UI/Backdrop/Backdrop';
 class Register extends Component {
     state={
         RegisterationForm: {
-            Name:{
+            UserName:{
                 EleConfig:{
                     type: 'text',
                     placeholder: 'Your Name'
                 },
                 value: '',
-                label: ' NAME',
+                label: 'User NAME',
                 validation:{
                     required: true,
                     isName: true
@@ -25,7 +25,7 @@ class Register extends Component {
                valid: false,
                touched: false
             },
-            email:{
+            Email:{
                 EleConfig:{
                     type: 'email',
                     placeholder: 'Mail Address'
@@ -53,7 +53,7 @@ class Register extends Component {
                valid: false,
                touched: false
             },
-            Mobile:{
+            PersonalMobile:{
                 EleConfig:{
                     type: 'text',
                     placeholder: 'Your Personal Number'
@@ -98,7 +98,7 @@ class Register extends Component {
                valid: false,
                touched: false
             },
-            Adhaar:{
+            AdhaarNo:{
                 EleConfig:{
                     type: 'text',
                     placeholder: 'Your Adhaar Number'
@@ -113,7 +113,7 @@ class Register extends Component {
                valid: false,
                touched: false
             },
-            carNo:{
+            CarNo:{
                 EleConfig:{
                     type: 'text',
                     placeholder: 'CarNumber:- CG 04 MG 7788'
@@ -188,7 +188,7 @@ class Register extends Component {
                 RegDet[data] = this.state.RegisterationForm[data].value;
             }
         }
-        const email = this.state.RegisterationForm['email'].value;
+        const email = this.state.RegisterationForm['Email'].value;
         const password = this.state.RegisterationForm['password'].value;
         const Issignup = this.state.Isignup;
         this.props.onSubmit(email,password,Issignup,RegDet);
@@ -230,7 +230,8 @@ class Register extends Component {
                     if(!this.state.Isignup){
                         Form = <form onSubmit={this.OnSignHandler}>
                                {ExtractedForm.map(data =>{
-                               if(data.id==='email' || data.id==='password'){
+
+                               if(data.id==='Email' || data.id==='password'){
                                    return  <Input 
                                    key = {data.id}
                                    EleConfig = {data.Elements.EleConfig}

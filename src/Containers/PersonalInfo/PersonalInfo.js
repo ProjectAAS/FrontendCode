@@ -13,12 +13,12 @@ class PersonalInfo extends Component {
         this.props.spinnerHide();
     }
 }
-//   ShowProfile =(identifier,ShowDetails) =>{
-//       return <span className={classes.Info}>
-//       <h2>NAME:-</h2>
-//       <p> {ShowDetails[0][identifier]}</p>
-//       </span>
-//   }
+  ShowProfile =(identifier,ShowDetails) =>{
+      return <span>
+      <p style={{textDecoration:'underline',fontWeight:'bold'}}>{identifier} :-</p> 
+      <p>{ShowDetails[0][identifier]}</p>
+      </span>
+  }
     render(){
         let Navigate = null;
         if(!this.props.IsAuthenticated){
@@ -27,10 +27,15 @@ class PersonalInfo extends Component {
         let ShowDetails =  this.props.userDetails;
             let Show= <Spinner />;
         if(ShowDetails){
-                // Show = this.ShowProfile('Name',ShowDetails);
               Show = <div className={classes.Info}>
-                        <h1>Name:-</h1>
-                        <p>Mohammad Fazil</p>
+                       {this.ShowProfile('UserName',ShowDetails)}
+                       {this.ShowProfile('Email',ShowDetails)}
+                       {this.ShowProfile('CarNo',ShowDetails)}
+                       {this.ShowProfile('AdhaarNo',ShowDetails)}
+                       {this.ShowProfile('PersonalMobile',ShowDetails)}
+                       {this.ShowProfile('RelativeMobile1',ShowDetails)}
+                       {this.ShowProfile('RelativeMobile2',ShowDetails)}
+                       {this.ShowProfile('RegistrationDate',ShowDetails)}
                      </div>
             }
         return(

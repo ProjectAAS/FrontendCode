@@ -10,7 +10,7 @@
     height: 100%;
     position: relative;
     margin-top: 80px;
-    background-color: rgb(248, 255, 144);
+    background-color: rgb(140, 248, 248);
     border-radius: 4px;
     box-shadow: 0px 6px 9px 4px rgb(199, 196, 196);
 }
@@ -21,11 +21,54 @@
 }
 .Info{
     width: 55%;
-    height: 500px;
-    background-color: rgb(193, 132, 243); 
+    height: 650px;
+    background-color: rgb(255, 196, 101); 
     margin-left: 10%;
     position: absolute;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-evenly;
     border-radius: 8px;
     box-shadow: 0px 6px 9px 4px rgb(199, 196, 196);
     margin-top: -25%;
+}
+.Info span{
+    display: flex;
+    flex-flow: row;
+    font-weight: medium;
+    align-items: center;
+    font-size: 25px;
+    justify-content: space-evenly;
+}
+@media(max-width: 720px){
+    .Img{
+        width: 50%;
+        margin-left: 10%;
+    }
+    .Info{
+        margin-top: 10%;
+        width: 100%;
+        margin-left: 0%;
+    }
+    .PersonalInfo{
+        height: 1400px;
+    }
+}
+@media(max-width: 470px){
+    .Img{
+        width: 62%;
+        margin-left: 10%;
+    }
+    .Info span{
+        display: block;
+    }
+    .PersonalInfo{
+        height: 1700px;
+    }
+    .Info{
+        margin-top: 10%;
+        width: 100%;
+        margin-left: 0%;
+        height: 1200px;
+    }
 }

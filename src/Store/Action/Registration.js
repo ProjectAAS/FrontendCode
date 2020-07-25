@@ -36,7 +36,8 @@ export const logOut =() =>{
 export const daTa =(Data,userId) =>{
     let Datadded = {
         ...Data,
-        userId: userId
+        userId: userId,
+        RegistrationDate: new Date().toLocaleDateString()
     }
    return dispatch =>{
     Axios.post('https://project-aas.firebaseio.com/UserDetails.json',Datadded)
