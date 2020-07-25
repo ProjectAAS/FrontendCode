@@ -1,5 +1,5 @@
 .PersonalInfo{
-    height: 1050px;
+    height: 950px;
     display: flex;
     flex-flow: column;
     overflow: scroll;
@@ -10,7 +10,7 @@
     height: 100%;
     position: relative;
     margin-top: 80px;
-    background-color: rgb(255, 218, 250);
+    background-color: rgb(248, 255, 144);
     border-radius: 4px;
     box-shadow: 0px 6px 9px 4px rgb(199, 196, 196);
 }
@@ -20,9 +20,9 @@
     padding-top: 40px;
 }
 .Info{
-    width: 50%;
-    height: 600px;
-    background-color: rgb(255, 255, 140); 
+    width: 55%;
+    height: 500px;
+    background-color: rgb(193, 132, 243); 
     margin-left: 10%;
     position: absolute;
     border-radius: 8px;
