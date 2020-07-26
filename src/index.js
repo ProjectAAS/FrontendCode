@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
+import '../node_modules/bootstrap/dist/css/bootstrap.css'
 import App from './App';
 import {createStore,applyMiddleware,compose} from 'redux';
 import RegisterReducer from './Store/Reducer/Registration';
