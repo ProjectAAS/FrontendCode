@@ -7,7 +7,7 @@ const InitialState = {
     UserID: null,
     TokenID: null,
     Info: null,
-    ShowSpinner: false,
+    ShowSpinner: false
 }
 const addDetails = (state,action) =>{
     return{
@@ -63,6 +63,7 @@ const hidespinner = (state,action) =>{
           ShowSpinner: false
         }
     }
+
 const reducer =(state = InitialState, action) =>{
     switch(action.type){
         case(actionTypes.ADDDETAILS): return addDetails(state,action);

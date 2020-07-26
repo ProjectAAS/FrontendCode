@@ -199,9 +199,6 @@ class Register extends Component {
             return {Isignup: !prev.Isignup}
         })
     }
-    // Showmap =() =>{
-    //     <a hre='http://maps.google.com/?q=21.2304815,81.6363762'></a>
-    // }
     render(){
         let Navigate = null;
         if(this.props.IsAuthenticated && (this.props.status || this.props.Info)){

@@ -37,7 +37,9 @@ export const daTa =(Data,userId) =>{
     let Datadded = {
         ...Data,
         userId: userId,
-        RegistrationDate: new Date().toLocaleDateString()
+        RegistrationDate: new Date().toLocaleDateString(),
+        latitude: '21.2121991',
+        longitude: '81.6443402'
     }
    return dispatch =>{
     Axios.post('https://project-aas.firebaseio.com/UserDetails.json',Datadded)
@@ -127,6 +129,7 @@ export const fetchData = (token,userId) =>{
               });
     }
 }
+
 export const authCheckState = () =>{
     return dispatch =>{
        const token = localStorage.getItem('token');
