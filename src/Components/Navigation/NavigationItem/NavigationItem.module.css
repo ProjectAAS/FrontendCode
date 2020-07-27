@@ -7,7 +7,10 @@
 }
 .NavigationItem img{
     height: 100%;
-    width: 130px;
+    width: 110px;
+}
+.logos{
+    color: white;
 }
 @media(max-width: 500px){
     .NavigationItem {
@@ -19,5 +22,11 @@
         width: 60%;
         padding-top: 40px;
         padding-bottom: 40px;
+    }
+}@media(min-width: 1000px){
+    .NavigationItem img{
+        height: 100%;
+        width: 110px;
+        margin-left: -27%;
     }
 }

@@ -11,14 +11,15 @@ class Home extends Component {
             <div >
                 <MDBContainer fluid>
                     <MDBRow>
-                        <MDBCol>
+                        <MDBCol className="p-0">
                 <Frontimage /> 
                 </MDBCol>
                 </MDBRow>
-              
-                   <MDBRow style={{ margin:'2%'}}>
-                     <MDBCol sm={4}> <h3>What<br></br> is <br></br>  AAS?</h3></MDBCol>
-                     <MDBCol sm={8}>   <p>Accident Alert System is a device which collect data from the incident
+                </MDBContainer>
+                <MDBContainer fluid >
+                  <MDBRow  className={classes.imp_AAS} >
+                     <MDBCol sm={4}> <h3>Why AAS <br></br> is Important?</h3></MDBCol>
+                     <MDBCol sm={8}>  <p>Accident Alert System is a device which collect data from the incident
                           via the help of sensors. The sensor analyze the impact and decides how much severe
                            the incident is. if the outcome of the data declare the incident to be severe then the system initializes Alert
                            and calling procedures.
