@@ -1,6 +1,7 @@
 import React,{Component} from 'react';
 import Frontimage from '../../Components/Frontimage/Frontimage';
 import classes from './Home.module.css';
+import whyAas from  '../../Assets/image/whyAas.png';
 import { MDBContainer, MDBRow, MDBCol } from "mdbreact";
 import { MDBBtn, MDBCard, MDBCardBody, MDBCardImage, MDBCardTitle, MDBCardText } from 'mdbreact';
 
@@ -19,13 +20,14 @@ class Home extends Component {
                 <MDBContainer fluid  >
                   <MDBRow  className={classes.imp_AAS} >
                      <MDBCol sm={4}> <h3>Why AAS <br></br> is Important?</h3></MDBCol>
-                     <MDBCol sm={8}>  <p>Accident Alert System is a device which collect data from the incident
-                          via the help of sensors. The sensor analyze the impact and decides how much severe
-                           the incident is. if the outcome of the data declare the incident to be severe then the system initializes Alert
-                           and calling procedures.
+                     <MDBCol sm={8}>  <p>Major Death,in accidents, occur due to not getting instant Medical help.So Aas will provide the information
+                         to the hospital and your family/friends ,if no one is their to help you after accident . 
                       </p></MDBCol>
-                    
+                      <MDBRow>
+                 <MDBCardImage className={classes.why_AAS} src={whyAas} />
                  </MDBRow>
+                 </MDBRow>
+              
 
                 </MDBContainer>
                  

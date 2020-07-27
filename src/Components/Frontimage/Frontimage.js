@@ -52,7 +52,7 @@ const Frontimage = () =>{
             <p>
                 Accident Alert System is a device which collect data from the incident
                 via the help of sensors. The sensor analyze the impact and decides how much severe
-                the incident is. if the outcome of the data declare the incident to be severe then the system initializes Alert
+                the incident is. If the outcome of the data declare the incident to be severe then the system initializes Alert
                 and calling procedures.
               
             </p>

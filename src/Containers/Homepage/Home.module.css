@@ -82,16 +82,31 @@ p, h1, h2, h3, h4, h5, h6, ul {
     @media(max-width: 759px){
           .imp_AAS{
             margin-top:100% !important;
-
+            background-image: url('https://static.vecteezy.com/system/resources/thumbnails/000/238/072/original/abstract-stylish-business-blue-wave-background.jpg');
+	        height: 490px;
+            background-size: 100% 100%;
+            background-attachment: fixed;
+            width: 100%;
             }
+    }
+    .why_AAS{
+        width: 50%;
+        margin-left: 31%;
+        position: sticky;
     }
     @media(min-width: 760px){
         .imp_AAS{
-          margin-top:15% !important;
+            margin-top:15% !important;
           	background-image: url('https://static.vecteezy.com/system/resources/thumbnails/000/238/072/original/abstract-stylish-business-blue-wave-background.jpg');
-	height: 490px;
-    background-size: 100% 100%;
-    background-attachment: fixed;
-    width: 100%;
+	        height: 490px;
+            background-size: 100% 100%;
+            background-attachment: fixed;
+            width: 100%;
           }
+  }
+  @media(max-width: 540px){
+    .why_AAS{
+        width: 90%;
+        margin-left: 6%;
+    }
   }
