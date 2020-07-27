@@ -47,10 +47,11 @@ p, h1, h2, h3, h4, h5, h6, ul {
             line-height: 24px;
             }
  p{
-    font-family: 'PT Serif', serif; 
+    font-family: 'Raleway', sans-serif;
          line-height: 24px;
          text-align: justify; 
          color: black;
+         font-weight: 700;
   }
   .gradient{
     background: rgb(2,0,36);
@@ -73,6 +74,7 @@ p, h1, h2, h3, h4, h5, h6, ul {
     box-shadow: 0 5px 11px 0 rgba(0,0,0,0.16), 0 4px 15px 0 rgba(0 0 0 / 0.86)!important;
   }
  
+
           
  img {
             max-width: 100%; }
@@ -80,10 +82,16 @@ p, h1, h2, h3, h4, h5, h6, ul {
     @media(max-width: 759px){
           .imp_AAS{
             margin-top:100% !important;
+
             }
     }
     @media(min-width: 760px){
         .imp_AAS{
           margin-top:15% !important;
+          	background-image: url('https://static.vecteezy.com/system/resources/thumbnails/000/238/072/original/abstract-stylish-business-blue-wave-background.jpg');
+	height: 490px;
+    background-size: 100% 100%;
+    background-attachment: fixed;
+    width: 100%;
           }
   }
