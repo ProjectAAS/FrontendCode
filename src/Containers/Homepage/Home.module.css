@@ -26,15 +26,16 @@
     background: #180c0c8c!important;
 }
 h3 {
-    text-transform: uppercase;
+  
     font-size: 19px;
-    font-family: "Muli-Bold";
+    font-family: 'Crimson Text', serif;
     text-align: center;
     margin-bottom: 32px;
     color: #333;
-    letter-spacing: 2px;
+    letter-spacing: 0px;
 font-weight: 900!important; 
 margin-top: 2%;
+
 }
 * {
     -webkit-box-sizing: border-box;
@@ -46,10 +47,32 @@ p, h1, h2, h3, h4, h5, h6, ul {
             line-height: 24px;
             }
  p{
-         font-family: "Muli-Bold";
+    font-family: 'PT Serif', serif; 
          line-height: 24px;
          text-align: justify; 
+         color: black;
   }
+  .gradient{
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(13,13,96,1) 11%, rgba(25,152,193,1) 81%);
+    display: block;
+    min-height: 118px;
+  }
+  .image_card {
+    width: 150px!important;
+    height: 150px!important;
+    border-radius: 100%!important;
+    overflow: hidden;
+    border-width: 3px;
+    border-color: red;
+    position: absolute;
+    margin-top: 46px;
+  }
+  .MDBCards{
+    -webkit-box-shadow: 0 5px 11px 0 rgba(0,0,0,0.18), 0 4px 15px 0 rgba(0,0,0,0.15)!important;
+    box-shadow: 0 5px 11px 0 rgba(0,0,0,0.16), 0 4px 15px 0 rgba(0 0 0 / 0.86)!important;
+  }
+ 
           
  img {
             max-width: 100%; }
