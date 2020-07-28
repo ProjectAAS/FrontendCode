@@ -1,7 +1,7 @@
  import React,{Component} from 'react';
 import {connect} from 'react-redux';
 import {Redirect} from 'react-router-dom';
-import Img from '../../Assets/image/imageindicate.PNG';
+import Img from '../../Assets/image/user4.png';
 import Event from '../../Components/Events/Event';
 import * as actions from '../../Store/Action/index';
 import classes from './PersonalInfo.module.css';
@@ -21,7 +21,7 @@ class PersonalInfo extends Component {
 }
   ShowProfile =(identifier,ShowDetails) =>{
       return <span>
-      <p style={{textDecoration:'underline',fontWeight:'bold'}}>{identifier} :-</p> 
+      <h3 style={{fontWeight:'700!important'}}>{identifier} :-</h3> 
       <p>{ShowDetails[0][identifier]}</p>
       </span>
   }
