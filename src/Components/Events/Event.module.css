@@ -6,7 +6,7 @@
 }
 .Para1{
     font-weight: 600;
-    font-size: 40px;
+    font-size: 20px;
 }
 .Para2{
     font-weight: 500;
@@ -23,3 +23,8 @@
        background-color: rgb(239, 255, 19);
        height: 10%;
    }
+   .Event1 button{
+    width: 30%;
+    background-color: rgb(255, 125, 19);
+    height: 10%;
+}
