@@ -6,7 +6,7 @@
     justify-content: space-evenly;
     align-items: center;
     flex-flow: row;
-    background-color: rgb(131, 129, 241);
+    background-color: rgb(12 12 37)!important;
     z-index: 30;
 }
 .Desktop{
@@ -17,7 +17,7 @@
     justify-content: space-evenly;
     align-items: center;
     flex-flow: row;
-    background-color: rgb(131, 129, 241);
+    background-color:rgb(12 12 37)!important;
     z-index: 30;
 }
 @media(max-width:499px){
