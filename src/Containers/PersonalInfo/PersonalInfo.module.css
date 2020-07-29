@@ -32,6 +32,7 @@
     justify-items: left;
     padding-top: 3%;
     margin-top: -26%;
+    word-spacing: 3px;
     padding-bottom: 4%;
 }
 p {
@@ -42,12 +43,7 @@ p {
     font-weight: 400;
 }
 .Button{
-    /* position: absolute;
-    background-color: rgb(206, 255, 70);
-    height: 40px;
-    width: 160px;
-    margin-top: 800px;
-    margin-left: -50%; */
+   
     position: absolute;
     height: 40px;
     width: 160px;
