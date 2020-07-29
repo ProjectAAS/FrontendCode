@@ -17,7 +17,7 @@ class Register extends Component {
                     placeholder: 'Your Name'
                 },
                 value: '',
-                label: 'User NAME',
+                label: 'USER NAME',
                 validation:{
                     required: true,
                     isName: true
@@ -249,7 +249,8 @@ class Register extends Component {
                                   <h1 style={{
                     marginTop: '100px', 
                     color: '#fff',
-                    fontFamily: 'bitter' ,marginLeft:'15px'}}>
+                    fontFamily: 'Montserrat',fontSize:'35px'
+                     ,marginLeft:'15px'}}>
                     {this.state.Isignup ? 'REGISTRATION FORM' : 'LOGIN'}
                    </h1>
                     <Aux>
