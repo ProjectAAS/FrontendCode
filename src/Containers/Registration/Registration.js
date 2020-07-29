@@ -129,7 +129,7 @@ class Register extends Component {
             }
         },
         formIsvalid: false,
-        Isignup: true
+        Isignup: false
     }
     CheckValidity =(rules, value) =>{
           let isValid =true;
@@ -248,16 +248,17 @@ class Register extends Component {
                     let Turn = <span>
                                   <h1 style={{
                     marginTop: '100px', 
-                    color: 'green'}}>
+                    color: '#fff',
+                    fontFamily: 'bitter' ,marginLeft:'15px'}}>
                     {this.state.Isignup ? 'REGISTRATION FORM' : 'LOGIN'}
                    </h1>
                     <Aux>
                     {errorMessage}
                     {Form}
                     </Aux>
-                     <p onClick={this.Toggle}>
+                     <button className={classes.login_btn} onClick={this.Toggle}>
                     {!this.state.Isignup ? 'REGISTER' : 'LOGIN'}
-                     </p>
+                     </button>
                              </span>;
 
                     if(this.props.ShowSpinner){
