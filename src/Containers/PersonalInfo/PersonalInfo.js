@@ -7,6 +7,8 @@ import * as actions from '../../Store/Action/index';
 import classes from './PersonalInfo.module.css';
 import Spinner from '../../Components/UI/Spinner/Spinner';
 import Modal from '../../Components/Modal/Modal';
+import GaugeChart from 'react-gauge-chart';
+import ProgressBar from 'react-bootstrap/ProgressBar';
 class PersonalInfo extends Component {
     state = {
         ShowModal : false,
@@ -32,6 +34,12 @@ class PersonalInfo extends Component {
       this.setState({latitude: ShowDetails[0]['latitude'],longitude: ShowDetails[0]['longitude']})
            
     }
+    RandomForFuel = (max,min) =>{
+        return Math.random() * (max - min) + min;
+    }
+    RandomForPollution = (max,min) =>{
+        return Math.random() * (max - min) + min;
+    }
     render(){
         let Navigate = null;
         if(!this.props.IsAuthenticated){
@@ -50,6 +58,22 @@ class PersonalInfo extends Component {
                        {this.ShowProfile('RelativeMobile1',ShowDetails)}
                        {this.ShowProfile('RelativeMobile2',ShowDetails)}
                        {this.ShowProfile('RegistrationDate',ShowDetails)}
+                       <span>
+                   <h3 style={{fontWeight:'700!important'}}>Fuel Remaining :-</h3>
+                          <GaugeChart id="gauge-chart5"
+                   nrOfLevels={420}
+                    arcsLength={[0.3, 0.5, 0.2]}
+                  colors={['#EA4228', '#F5CD19','#5BE12C' ]}
+                   percent={this.RandomForFuel(0,1)}
+                   arcPadding={0.02}
+                    textColor= {'black'}
+                     hideText ={true}
+                        style = {{height: '20%',width: '30%',marginTop: '-70px'}}/>
+                   </span>
+                   <span>
+                       <h3 style={{fontWeight:'700!important'}}>Pollution level:-</h3>
+                       {/* Apply ProgressBar here */}
+                          </span>
                      </div>
                      disable = true;
                   

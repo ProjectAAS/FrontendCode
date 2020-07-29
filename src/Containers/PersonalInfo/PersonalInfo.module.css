@@ -21,7 +21,7 @@
 }
 .Info{
     width: 50%;
-    height: 58%;
+    height: 66%;
     position: absolute;
     display: grid;
     flex-flow: column;
@@ -51,7 +51,7 @@ p {
     position: absolute;
     height: 40px;
     width: 160px;
-    margin-top: 66%;
+    margin-top: 79%;
     margin-left: -50%;
     border: none;
     cursor: pointer;
@@ -117,19 +117,19 @@ p {
 }
 @media(min-width: 1000px){
     .Button{
-        margin-top: 610px;
+        margin-top: 710px;
         margin-left: -45%!important;
     }
 }
 @media  (max-width: 870px) and (min-width: 716px){
     .Button{
-        margin-top: 610px;
+        margin-top: 700px;
         margin-left: -45%!important;
     }
 }
 @media (max-width: 717px) and (min-width: 467px){
     .Button{
-        margin-top: 1290px;
+        margin-top: 1390px;
         margin-left: -39%!important;
     }
 }
