@@ -6,7 +6,7 @@ const Event = (props) =>{
     let link = 'http://maps.google.com/?q=' + props.latitude + ',' + props.longitude
     return(
         <div>
-            {!props.latitude ?<div className = {classes.Event2}>
+            {props.latitude ?<div className = {classes.Event2}>
                 <br />
                 <img src ={accImg} className={classes.accident} alt='Logo'/>
                 <p className={classes.Para2}>An Accident occurs</p>
